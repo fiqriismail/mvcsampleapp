@@ -41,5 +41,41 @@ namespace SLTConsumerTicketing.Web.Api.BL
             return newAddress.Id;
 
         }
+
+        public List<AddressMapper> GetAllAddresses()
+        {
+            var addressList = context.Addresses.ToList();
+
+            var addresses = new List<AddressMapper>();
+
+            foreach (var address in addressList)
+            {
+                addresses.Add(new AddressMapper {
+                    Id = address.Id,
+                    AddNo = address.AddNo,
+                    City = address.City,
+                    Country = address.Country,
+                    Street = address.Street
+                }); 
+            }
+
+            return addresses;
+            
+        }
+
+        public AddressMapper GetAddress(int id)
+        {
+            var address = new AddressMapper();
+
+            var currentAddress = context.Addresses.Find(id);
+
+            address.AddNo = currentAddress.AddNo;
+            address.City = currentAddress.City;
+            address.Country = currentAddress.Country;
+            address.Id = currentAddress.Id;
+            address.Street = currentAddress.Street;
+
+            return address;
+        }
     }
 }

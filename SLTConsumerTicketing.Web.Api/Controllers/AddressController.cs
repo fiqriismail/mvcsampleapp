@@ -20,5 +20,19 @@ namespace SLTConsumerTicketing.Web.Api.Controllers
             var id = addressService.PostAddress(address);
             return Ok(id);
         }
+
+        [HttpGet]
+        public IHttpActionResult GetAddresses()
+        {
+            var addList = addressService.GetAllAddresses();
+            return Ok(addList);
+        }
+
+        [HttpGet]
+        public IHttpActionResult GetAddress(int id)
+        {
+            var address = addressService.GetAddress(id);
+            return Ok(address);
+        }
     }
 }

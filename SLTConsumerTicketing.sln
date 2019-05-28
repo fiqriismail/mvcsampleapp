@@ -13,6 +13,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SLTConsumerTicketing.Web.Ap
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SLTConsumerTicketing.Web.Api.ViewMappers", "SLTConsumerTicketing.Web.Api.ViewMappers\SLTConsumerTicketing.Web.Api.ViewMappers.csproj", "{1CDAF47C-8539-407A-9A3B-0A5137EDE9E8}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SLTConsumerTicketing.Web", "SLTConsumerTicketing.Web\SLTConsumerTicketing.Web.csproj", "{C3F73B0D-65BC-4ED7-81B5-5C277B84E22D}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -39,6 +41,10 @@ Global
 		{1CDAF47C-8539-407A-9A3B-0A5137EDE9E8}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{1CDAF47C-8539-407A-9A3B-0A5137EDE9E8}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{1CDAF47C-8539-407A-9A3B-0A5137EDE9E8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C3F73B0D-65BC-4ED7-81B5-5C277B84E22D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C3F73B0D-65BC-4ED7-81B5-5C277B84E22D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C3F73B0D-65BC-4ED7-81B5-5C277B84E22D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C3F73B0D-65BC-4ED7-81B5-5C277B84E22D}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
